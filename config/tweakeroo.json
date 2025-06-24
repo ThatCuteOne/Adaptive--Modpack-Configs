@@ -1,5 +1,6 @@
 {
   "Fixes": {
+    "stackableShulkersInHopperFix": true,
     "macHorizontalScroll": false,
     "ravagerClientBlockBreakFix": false
   },
@@ -55,6 +56,7 @@
     "angelBlockPlacementDistance": 3.0,
     "breakingGridSize": 3,
     "customInventoryGuiScale": 2,
+    "darknessScaleOverrideValue": 0.45,
     "entityReachDistance": 3.0,
     "fastBlockPlacementCount": 2,
     "fastLeftClickCount": 10,
@@ -101,9 +103,54 @@
     "structureBlockMaxSize": 128,
     "toolSwitchableSlots": "1-9",
     "toolSwitchIgnoredSlots": "",
-    "toolSwapBetterEnchants": false,
-    "toolSwapSilkTouchFirst": true,
-    "weaponSwapBetterEnchants": false,
+    "toolSwapBetterEnchants": {
+      "enabled": false,
+      "hotkey": {
+        "keys": ""
+      }
+    },
+    "toolSwapPreferSilkTouch": {
+      "enabled": false,
+      "hotkey": {
+        "keys": ""
+      }
+    },
+    "toolSwapBambooUsesSwordFirst": {
+      "enabled": true,
+      "hotkey": {
+        "keys": ""
+      }
+    },
+    "toolSwapNeedsShearsFirst": {
+      "enabled": true,
+      "hotkey": {
+        "keys": ""
+      }
+    },
+    "toolSwapSilkTouchFirst": {
+      "enabled": true,
+      "hotkey": {
+        "keys": ""
+      }
+    },
+    "toolSwapSilkTouchOres": {
+      "enabled": false,
+      "hotkey": {
+        "keys": ""
+      }
+    },
+    "toolSwapSilkTouchOverride": {
+      "enabled": false,
+      "hotkey": {
+        "keys": ""
+      }
+    },
+    "weaponSwapBetterEnchants": {
+      "enabled": false,
+      "hotkey": {
+        "keys": ""
+      }
+    },
     "zoomFov": 30.0,
     "zoomResetFovOnActivate": true
   },
@@ -260,6 +307,7 @@
     }
   },
   "Internal": {
+    "darknessScaleValueOriginal": 1.0,
     "flySpeedPreset": 0,
     "gammaValueOriginal": 0.5,
     "hotbarScrollCurrentRow": 3,
@@ -331,6 +379,7 @@
       "mainhand",
       "offhand"
     ],
+    "silkTouchOverride": [],
     "unstackingItems": [
       "minecraft:bucket",
       "minecraft:glass_bottle"
@@ -341,6 +390,12 @@
   },
   "DisableToggles": {
     "disableArmorStandRendering": {
+      "enabled": false,
+      "hotkey": {
+        "keys": ""
+      }
+    },
+    "disableAtmosphericFog": {
       "enabled": false,
       "hotkey": {
         "keys": ""
@@ -533,7 +588,7 @@
       }
     },
     "disableRenderDistanceFog": {
-      "enabled": false,
+      "enabled": true,
       "hotkey": {
         "keys": ""
       }
@@ -613,6 +668,9 @@
   },
   "DisableHotkeys": {
     "disableArmorStandRendering": {
+      "keys": ""
+    },
+    "disableAtmosphericFog": {
       "keys": ""
     },
     "disableAxeStripping": {
@@ -766,6 +824,7 @@
     "tweakCommandBlockExtraFields": false,
     "tweakCustomFlyDeceleration": false,
     "tweakCustomInventoryScreenScale": false,
+    "tweakDarknessVisibility": false,
     "tweakElytraCamera": false,
     "§6tweakEntityReachOverride§r": false,
     "tweakEntityTypeAttackRestriction": false,
@@ -830,6 +889,7 @@
     "tweakSwapAlmostBrokenTools": false,
     "tweakTabCompleteCoordinate": false,
     "tweakToolSwitch": false,
+    "tweakWaterVisibility": false,
     "tweakWeaponSwitch": false,
     "tweakYMirror": false,
     "tweakZoom": false
@@ -884,6 +944,9 @@
       "keys": ""
     },
     "tweakCustomInventoryScreenScale": {
+      "keys": ""
+    },
+    "tweakDarknessVisibility": {
       "keys": ""
     },
     "tweakElytraCamera": {
@@ -1076,6 +1139,9 @@
       "keys": ""
     },
     "tweakToolSwitch": {
+      "keys": ""
+    },
+    "tweakWaterVisibility": {
       "keys": ""
     },
     "tweakWeaponSwitch": {
